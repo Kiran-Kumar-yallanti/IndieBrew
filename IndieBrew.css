@@ -289,7 +289,9 @@ footer {
   p,li{
     font-size: 0.8rem;
   }
-  
+  p{
+    line-height: 1.3em;
+  }
 
   /* ========== Header Starts =========== */
 
