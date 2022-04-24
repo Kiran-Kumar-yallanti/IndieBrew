@@ -286,6 +286,10 @@ footer {
     background: radial-gradient(circle at 0% 5%, #ebcaf7 0%, #fcfbf7 19%);
     background-repeat: no-repeat;
   }
+  p,li{
+    font-size: 0.8rem;
+  }
+  
 
   /* ========== Header Starts =========== */
 
@@ -348,7 +352,7 @@ footer {
     padding: 40px;
   }
   .infoSection>.infoTextLast{
-    order: 1;
+    order: 2;
     width: 100%;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -371,7 +375,7 @@ footer {
   .aboutCompany{
     width: 100%;
   }
-  .aboutCompany>h3 + p{
+  .aboutCompany>h3 {
     font-size: 0.8rem;
   }
   .footerlinnks{
@@ -384,7 +388,6 @@ footer {
   }
   .footerlist>ul{
     padding: 0%;
-    font-size: 0.8rem;
   }
   .footerlist > ul > li {
     line-height: 1.5rem;
