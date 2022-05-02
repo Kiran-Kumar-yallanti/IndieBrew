@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;800&display=swap");
+
+* {
+  list-style: none;
+  border-style: none;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+body {
+  padding: 2% 9%;
+  background: radial-gradient(circle at 0% 5%, #ebcaf7 0%, #fcfbf7 19%);
+}
+/* ========== Navigation Bar starts ========== */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu > img {
+  display: none;
+}
+.menu > ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.logo,
+.menu > ul,
+.menu > ul > li {
+  cursor: pointer;
+}
+.menu > ul > li:hover {
+  color: rgb(60, 60, 200);
+  text-decoration: underline;
+}
+button {
+  border: 0.8px solid #fff;
+  padding: 20px;
+  font-size: 16px;
+  background-color: rgb(60, 60, 200);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  border: 0.8px solid rgb(60, 60, 200);
+  border-radius: 50px;
+  background-color: #fff;
+  color: rgb(60, 60, 200);
+}
+
+/* ========== Navigation Bar ends ========== */
+
+/* ========== Hero Section starts ========== */
+header > .hero {
+  height: 80%;
+}
+.hero {
+  padding-top: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15%;
+}
+.leftHero {
+  width: 50%;
+}
+.leftHero > h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.leftHero > p {
+  color: #222;
+  letter-spacing: 0.2px;
+}
+.leftHero > img {
+  display: block;
+  margin-top: 4%;
+}
+.leftHero > button {
+  margin-top: 2.5%;
+  cursor: pointer;
+}
+.leftHero > p > span {
+  color: rgb(60, 60, 200);
+}
+.rightHero {
+  width: 50%;
+}
+.rightHero > img {
+  width: 100%;
+}
+
+/* =============== Hero Section ends ================ */
+
+/* ==============Section Starts ================ */
+
+.infoSection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 150px;
+}
+.infoSection > .infoTextFirst {
+  width: 50%;
+}
+.infoSection > .infoLogos {
+  width: 50%;
+}
+.infoTextFirst > h2 {
+  font-size: 32px;
+  line-height: 3rem;
+}
+.infoTextFirst > p {
+  line-height: 2rem;
+  color: #222;
+  width: 80%;
+}
+.infoTextFirst > p > a {
+  color: rgb(60, 60, 200);
+  font-weight: 600;
+  cursor: pointer;
+}
+.infoTextFirst > p > a:hover {
+  text-decoration: underline;
+}
+.infoLogos > img {
+  width: 100%;
+}
+.infoSection > .logoPhone {
+  width: 50%;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 125px;
+}
+.logoPhone > img {
+  width: 100%;
+}
+.infoSection > .infoTextLast {
+  width: 50%;
+  padding-top: 125px;
+}
+.infoTextLast > h2 {
+  font-size: 32px;
+  line-height: 3rem;
+}
+.infoTextLast > p {
+  line-height: 2rem;
+  color: #222;
+  width: 80%;
+}
+.infoTextLast > p > a {
+  color: rgb(60, 60, 200);
+  font-weight: 600;
+  cursor: pointer;
+}
+.infoTextLast > p > a:hover {
+  text-decoration: underline;
+}
+
+/* ============== Section Ends ================ */
+
+/* ============== Footer Starts ===============*/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.aboutCompany {
+  width: 30%;
+}
+.aboutCompany > p {
+  line-height: 1.5rem;
+  color: #222;
+}
+.footerlinnks {
+  display: flex;
+}
+.footerlist > ul > li {
+  line-height: 2rem;
+  cursor: pointer;
+}
+.footerlist > ul > li:hover {
+  text-decoration: underline;
+}
+.footerlist > ul > li:first-child:hover {
+  text-decoration: none;
+}
+/* ============== Footer Ends ===============*/
+
+/* ============== Media Queries Starts ===============*/
+
+/* ======================== Tablet screens and Small size Laptops starts ============================ */
+
+@media only screen and (min-width: 670px) and (max-width: 1050px) {
+  body {
+    margin: 0% auto;
+    padding: 2% 2%;
+    width: 90%;
+  }
+  /* =========== Header starts =========== */
+  h1 {
+    font-size: 38px !important;
+    font-weight: 600;
+  }
+
+  main {
+    flex-direction: column-reverse;
+    margin-top: 0;
+  }
+  .menu > ul > li {
+    font-size: 12px;
+  }
+  button {
+    font-size: 14px;
+  }
+  .leftHero > p {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+
+  /* =========== Header ends =========== */
+
+  /* =========== Section starts =========== */
+
+  .infoSection > .infoTextFirst > h2 {
+    font-size: 20px;
+    line-height: 1.5rem;
+  }
+  .infoSection > .infoTextFirst > p {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+  .infoSection > .infoTextLast > h2 {
+    font-size: 20px;
+    line-height: 1.5rem;
+  }
+  .infoSection > .infoTextLast > p {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+
+  /* =========== Section ends =========== */
+
+  /* =========== Footer starts ============= */
+  footer {
+    justify-content: space-between;
+  }
+  footer > .aboutCompany {
+    width: 50%;
+  }
+  .aboutCompany > h3 {
+    font-size: 13px;
+  }
+  .aboutCompany > p {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  footer > .footerlinnks {
+    width: 40%;
+    flex-wrap: wrap;
+  }
+  footer > h3 {
+    font-size: 13px;
+  }
+  .footerlinnks > .footerlist {
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
+/* =========== Footer ends ============= */
+
+/* ======================== Tablet screens and Small size Laptops ends ============================ */
+
+/* ==================================== Mobile Screens ============================================ */
+
+@media only screen and (min-width: 240px) and (max-width: 669px) {
+  body {
+    margin: 0% auto;
+    padding: 10% 5% !important;
+    width: 100%;
+    background: radial-gradient(circle at 0% 5%, #ebcaf7 0%, #fcfbf7 19%);
+    background-repeat: no-repeat;
+  }
+
+  /* ========== Header Starts =========== */
+
+  /* ========== Navigation starts =========== */
+  nav {
+    justify-content: space-between;
+  }
+  nav > .menu > ul {
+    display: none;
+  }
+  nav > .menu > img {
+    display: block;
+  }
+  /* =========== Navigation ends ========== */
+
+  /* =========== Hero Starts ========== */
+
+  .hero {
+    flex-direction: column-reverse;
+    margin-top: 13%;
+  }
+  .leftHero {
+    width: 100%;
+  }
+  .leftHero > p {
+    line-height: 1.3em;
+  }
+  .rightHero {
+    width: 100%;
+  }
+
+  /* =========== Hero Ends ========== */
+
+  /* ======================= Header Ends ======================= */
+
+  /* ======================= Section Starts ===================== */
+
+  section {
+    flex-direction: column;
+    padding-bottom: 75px !important;
+  }
+  section>.infoSection{
+    padding-bottom: 0px;
+
+  }
+  .infoSection>.infoLogos{
+    order: -1;
+    width: 100%;
+  }
+  .infoSection>.infoTextFirst{
+    order: 0;
+    width: 100%;
+  }
+  .infoSection>.infoTextFirst>p{
+    width: 100%;
+  }
+  .infoSection>.logoPhone{
+    order: 1;
+    width: 100%;
+    padding: 40px;
+  }
+  .infoSection>.infoTextLast{
+    order: 1;
+    width: 100%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .infoSection>.infoTextLast>p{
+    width: 100%;
+  }
+  /* ========================== Section Ends =========================== */
+
+
+  /* ========================== Footer Starts =========================== */
+
+  footer{
+    flex-direction: column;
+  }
+  footer h3{
+    margin-bottom: 8px;
+  }  
+
+  .aboutCompany{
+    width: 100%;
+  }
+  .aboutCompany>h3 + p{
+    font-size: 0.8rem;
+  }
+  .footerlinnks{
+    width: 100%;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+  }
+  .footerlist{
+    width: 50%;
+  }
+  .footerlist>ul{
+    padding: 0%;
+    font-size: 0.8rem;
+  }
+  .footerlist > ul > li {
+    line-height: 1.5rem;
+  }
+
+}
+
+  /* ========================== Footer Ends =========================== */
+
